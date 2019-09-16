@@ -4,66 +4,66 @@
             <!--环境监测-->
             <div class="logo">
                 <img src="../assets/img/logo1.png" alt="logo">
-                <a style="color: #fff;font-size:21px;font-weight: 500;line-height: 56px;font-family: 'Microsoft YaHei' ">固安县环境保护网格化管理平台</a>
+                <a style="color: #fff;font-size:21px;font-weight: 500;line-height: 56px;font-family: 'Microsoft YaHei' ">工业企业分表系统平台</a>
             </div>
            <!---->
             <ul class="bnav">
-                <li><a href="#/likewinter">首页</a></li>
-                <li>
-                    <a style="padding: 0 10px" href="#/">
-                        实时监测
-                    </a>
-                </li>
-                <!--气象预报-->
-                <li>
-                    <a style="padding: 0 10px">气象预报<i style="padding: 0 10px"></i></a>
-                    <div class="Fouritem submenu same">
-                        <a href="#/dynamicweather">动态风场</a><br/>
-                        <a href="#/Weather">天气预报</a><br/>
-                        <a href="#/SandDustForecast">沙尘预报</a><br/>
-                        <a href="#/FogHazeForecast">雾霾预报</a><br/>
-                        <a href="http://60.10.151.86:63317/langfang_release_web" target="_blank">空气质量</a>
-                    </div>
-                </li>
+                <!--<li><a href="#/likewinter">首页</a></li>-->
+                <!--<li>-->
+                    <!--<a style="padding: 0 10px" href="#/">-->
+                        <!--实时监测-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--&lt;!&ndash;气象预报&ndash;&gt;-->
+                <!--<li>-->
+                    <!--<a style="padding: 0 10px">气象预报<i style="padding: 0 10px"></i></a>-->
+                    <!--<div class="Fouritem submenu same">-->
+                        <!--<a href="#/dynamicweather">动态风场</a><br/>-->
+                        <!--<a href="#/Weather">天气预报</a><br/>-->
+                        <!--<a href="#/SandDustForecast">沙尘预报</a><br/>-->
+                        <!--<a href="#/FogHazeForecast">雾霾预报</a><br/>-->
+                        <!--<a href="http://60.10.151.86:63317/langfang_release_web" target="_blank">空气质量</a>-->
+                    <!--</div>-->
+                <!--</li>-->
 
-                <!--大数据资源-->
-                <li>
-                    <a style="padding: 0 10px">大数据资源<i style="padding: 0 10px"></i></a>
-                    <div class="Fiveitem submenu same">
-                        <div>
-                            <h3>排名</h3>
-                            <a href="#/StateControl">省控排名</a>
-                            <div class="line"></div>
-                            <a href="#/TvocRange">TVOC排名</a>
-                        </div>
-						<div>
-                            <h3>考核</h3>
-                            <a href="#/CountyCheck">区县考核</a>
-                            <div class="line"></div>
-                            <a href="#/CityCheck">乡镇考核</a>
-                        </div>
-                        <div>
-                            <h3>统计</h3>
-                            <a href="#/TodayData">今日数据</a>
-                            <div class="line"></div>
-                            <a href="#/SimultaneRate">同期变化率</a><br>
-                            <a href="#/RankingStatistics">排名统计</a>
-                        </div>
-                    </div>
-                </li>
+                <!--&lt;!&ndash;大数据资源&ndash;&gt;-->
+                <!--<li>-->
+                    <!--<a style="padding: 0 10px">大数据资源<i style="padding: 0 10px"></i></a>-->
+                    <!--<div class="Fiveitem submenu same">-->
+                        <!--<div>-->
+                            <!--<h3>排名</h3>-->
+                            <!--<a href="#/StateControl">省控排名</a>-->
+                            <!--<div class="line"></div>-->
+                            <!--<a href="#/TvocRange">TVOC排名</a>-->
+                        <!--</div>-->
+						<!--<div>-->
+                            <!--<h3>考核</h3>-->
+                            <!--<a href="#/CountyCheck">区县考核</a>-->
+                            <!--<div class="line"></div>-->
+                            <!--<a href="#/CityCheck">乡镇考核</a>-->
+                        <!--</div>-->
+                        <!--<div>-->
+                            <!--<h3>统计</h3>-->
+                            <!--<a href="#/TodayData">今日数据</a>-->
+                            <!--<div class="line"></div>-->
+                            <!--<a href="#/SimultaneRate">同期变化率</a><br>-->
+                            <!--<a href="#/RankingStatistics">排名统计</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</li>-->
 
-                <!--系统后台-退出系统-->
-                <li style="margin-right: 0;">
-                    <span class="position-p"></span>
-                    <img style="padding: 0 20px" src="../assets/img/btn_intercalate.png" class="activehov">
-                    <div class="Sixitem submenu" v-if="isShow">
-                        <a href="#/Management/BusinessManagement/Case-Review" class="houtai"><img src="../assets/img/btn_Backstage1.png" alt="">进入后台</a><br/>
-                        <a class="tuichu" v-on:click="exit"><img src="../assets/img/btn_quit1.png" alt="">退出系统</a>
-                    </div>
-                     <div class="Sixitem submenu" v-else>
-                        <a class="tuichu" v-on:click="exit"><img src="../assets/img/btn_quit1.png" alt="">退出系统</a>
-                    </div>
-                </li>
+                <!--&lt;!&ndash;系统后台-退出系统&ndash;&gt;-->
+                <!--<li style="margin-right: 0;">-->
+                    <!--<span class="position-p"></span>-->
+                    <!--<img style="padding: 0 20px" src="../assets/img/btn_intercalate.png" class="activehov">-->
+                    <!--<div class="Sixitem submenu" v-if="isShow">-->
+                        <!--<a href="#/Management/BusinessManagement/Case-Review" class="houtai"><img src="../assets/img/btn_Backstage1.png" alt="">进入后台</a><br/>-->
+                        <!--<a class="tuichu" v-on:click="exit"><img src="../assets/img/btn_quit1.png" alt="">退出系统</a>-->
+                    <!--</div>-->
+                     <!--<div class="Sixitem submenu" v-else>-->
+                        <!--<a class="tuichu" v-on:click="exit"><img src="../assets/img/btn_quit1.png" alt="">退出系统</a>-->
+                    <!--</div>-->
+                <!--</li>-->
             </ul>
         </div>
     </div>
