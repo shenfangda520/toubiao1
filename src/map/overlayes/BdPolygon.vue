@@ -12,17 +12,17 @@
     data() {
       return {
         layers: [{
-          url: '/static/data/TY1.json',
+          url: '/static/data/kf01.json',
           hasVisible: true,
           displayFieldName: 'FCNAME',
           geometry: []
         }, {
-          url: '/static/data/TE1.json',
+          url: '/static/data/kf02.json',
           hasVisible: false,
           displayFieldName: 'FCNAME',
           geometry: []
         }, {
-          url: '/static/data/TS1.json',
+          url: '/static/data/kf03.json',
           hasVisible: false,
           displayFieldName: 'FCNAME',
           geometry: []
