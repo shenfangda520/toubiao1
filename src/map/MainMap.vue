@@ -20,6 +20,7 @@
       </div>
       <div id="search_char"></div>
     </el-dialog>
+    <layer-switch class="css_switch"></layer-switch>
     <!--弹出框面板-->
     <!--<el-dialog :visible.sync="wachiVisible" top="6vh" width="85%" :before-close="wachhandleClose">-->
       <!--<div class="dianlode">-->
@@ -40,6 +41,7 @@
   import BMap from 'BMap'
   import MainLayerHandle from '@/map/controls/MainLayerHandle'
   import MapHandle from '@/map/controls/MapHandle'
+  import LayerSwitch from '@/map/controls/LayerSwitch'
   //污染物对比
   //import largedata from '@/views/DataAnalysis/LargeDataResources'
   //固定源统计
@@ -382,6 +384,7 @@
     components: {
         MainLayerHandle,
         MapHandle,
+        LayerSwitch
         // RevolvingMenu,
         // Airstation,
         // largedata,
