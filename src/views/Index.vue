@@ -7,38 +7,39 @@
         <!--应急信息-->
         <public-info></public-info>
         <!--右侧面板-->
-        <indexpanel></indexpanel>
+        <layer-switch class="css_switch"></layer-switch>
+        <!--<indexpanel></indexpanel>-->
         <!--巡查员弹框-->
         <!---->
-        <el-dialog
-                title="巡查调度"
-                :visible.sync="dialogVisible"
-                width="25%"
-                top="10%"
-        >
-            <div class="block">
-                <span>标题：</span>
-                <el-input v-model="biaoti" placeholder="请输入标题"></el-input>
-                <!--<div class="tishi" v-show="classts">{{tishiyu}}</div>-->
-            </div>
-            <div class="block">
-                <span>内容：</span>
-                <el-input
-                        type="textarea"
-                        :rows="4"
-                        placeholder="请输入内容"
-                        v-model="textarea">
-                </el-input>
-            </div>
-            <div class="block">
-                <span>形式：</span>
-                <el-checkbox v-model="checked">APP</el-checkbox>
-            </div>
-            <span slot="footer" class="dialog-footer">
-                <!--<el-button @click="dialogVisible = false">取 消</el-button>-->
-                <el-button type="primary" @click="submitsend">发送</el-button>
-            </span>
-        </el-dialog>
+        <!--<el-dialog-->
+                <!--title="巡查调度"-->
+                <!--:visible.sync="dialogVisible"-->
+                <!--width="25%"-->
+                <!--top="10%"-->
+        <!--&gt;-->
+            <!--<div class="block">-->
+                <!--<span>标题：</span>-->
+                <!--<el-input v-model="biaoti" placeholder="请输入标题"></el-input>-->
+                <!--&lt;!&ndash;<div class="tishi" v-show="classts">{{tishiyu}}</div>&ndash;&gt;-->
+            <!--</div>-->
+            <!--<div class="block">-->
+                <!--<span>内容：</span>-->
+                <!--<el-input-->
+                        <!--type="textarea"-->
+                        <!--:rows="4"-->
+                        <!--placeholder="请输入内容"-->
+                        <!--v-model="textarea">-->
+                <!--</el-input>-->
+            <!--</div>-->
+            <!--<div class="block">-->
+                <!--<span>形式：</span>-->
+                <!--<el-checkbox v-model="checked">APP</el-checkbox>-->
+            <!--</div>-->
+            <!--<span slot="footer" class="dialog-footer">-->
+                <!--&lt;!&ndash;<el-button @click="dialogVisible = false">取 消</el-button>&ndash;&gt;-->
+                <!--<el-button type="primary" @click="submitsend">发送</el-button>-->
+            <!--</span>-->
+        <!--</el-dialog>-->
     </div>
 </template>
 
@@ -46,6 +47,7 @@
     import MainMap from '@/map/MainMap' //0809
     import indexpanel from '@/components/index_new'
     import publicInfo from '@/components/PublicInformation'//应急信息
+    import LayerSwitch from '@/map/controls/LayerSwitch'
     import {bus} from '@/js/bus.js'
     import api from '../api/index'
     export default {
@@ -132,7 +134,7 @@
 		        }
 		    },
         },
-        components: {MainMap, indexpanel,publicInfo}
+        components: {MainMap, LayerSwitch,publicInfo}
     }
 </script>
 
