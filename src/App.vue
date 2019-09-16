@@ -30,9 +30,9 @@
             })
         },
         computed: {
-            userState() {
-                return this.$store.state.userData
-            }
+            // userState() {
+            //     return this.$store.state.userData
+            // }
         },
         mounted() {
             const _this = this;
