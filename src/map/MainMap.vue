@@ -216,7 +216,7 @@
       ready() {
         let map = new BMap.Map('main_map', {enableMapClick: false});
         //map.centerAndZoom('廊坊', 10);
-        map.centerAndZoom(new BMap.Point(116.297599,39.33959), this.zoom);
+        map.centerAndZoom(new BMap.Point(116.674,39.5985), this.zoom);
         map.enableScrollWheelZoom();
         mapStyle && map.setMapStyle(mapStyle);
         this.map = map;

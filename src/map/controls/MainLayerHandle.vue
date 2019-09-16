@@ -45,7 +45,7 @@
         jiankong:true,
         shiping: true,
         aclink:false,
-        mlength:4,
+        mlength:2,
         defaultType:'LAYER_GS',
         clicksrc:'static/imgs/main/left.png',
         clickchesrc:'static/imgs/main/right.png',
@@ -82,7 +82,7 @@
             src: 'static/imgs/main/gs.png',
             checkedSrc: 'static/imgs/main/gs_c.png',
             checked:false,
-            visible:true,
+            visible:false,
             displayName: 'pointname',
             childs:[{
               text: 'AQI',
@@ -159,7 +159,7 @@
             src: 'static/imgs/main/m_cx.png',
             checkedSrc: 'static/imgs/main/cx_c.png',
             checked:false,
-            visible:true,
+            visible:false,
             childs: [{
               text: 'PM2.5',
               fieldName: 'pm25'
@@ -194,7 +194,7 @@
             src: 'static/imgs/main/qy.png',
             checkedSrc: 'static/imgs/main/qy_c.png',
             checked:false,
-            visible:true,
+            visible:false,
             childs:[{
               text: '烟尘',
               fieldName: 'smokeStatus'
@@ -216,7 +216,7 @@
             visible:false,
             childs:[]
           },{
-            name: 'layer_cgq_vocs',
+            name: 'layer_cgq_voc',
             parentName: 'layer_jc',
             value: 'VOCs监测',
             src: 'static/imgs/mues/sixzb/vocw.png',
@@ -239,40 +239,23 @@
         ZHtargets: [
           {
             name: 'layer_qm',
-            value: '案件',
+            value: '分表计电系统',
             parentName: 'layer_zh',
             parentIndex: '2',
             src: 'static/imgs/main/anjian.png',
             checkedSrc: 'static/imgs/main/anjian_c.png'
-          },
-          {
-            name: 'layer_xcy',
-            value: '巡查员',
-            parentName: 'layer_zh',
-            parentIndex: '2',
-            src: 'static/imgs/main/xuncha.png',
-            checkedSrc: 'static/imgs/main/xuncha_c.png'
           }
         ],
         //视频监控
         JKtargets: [
           {
             name: 'layer_sp_slw',
-            value: '散乱污企业',
+            value: 'TVOC视频监控',
             parentName: 'layer_jk',
             from:'0',
             parentIndex: '1',
             src: 'static/imgs/mues/video/slw.png',
             checkedSrc: 'static/imgs/mues/video/slw_c.png'
-          },
-          {
-            name: 'layer_sp_voc',
-            value: '秸秆焚烧',
-            parentName: 'layer_jk',
-            from:'1',
-            parentIndex: '1',
-            src: 'static/imgs/mues/video/jg.png',
-            checkedSrc: 'static/imgs/mues/video/jg_c.png'
           }
         ]
       }
@@ -650,7 +633,7 @@
           }
         }
         li:nth-child(1){
-          margin-bottom:114px;
+          margin-bottom:38px;
         }
         li:nth-child(2){
           margin-bottom: 38px;
