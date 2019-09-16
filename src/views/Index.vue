@@ -7,8 +7,8 @@
         <!--应急信息-->
         <public-info></public-info>
         <!--右侧面板-->
-        <layer-switch class="css_switch"></layer-switch>
-        <!--<indexpanel></indexpanel>-->
+        <!--<layer-switch class="css_switch"></layer-switch>-->
+        <indexpanel v-show="false"></indexpanel>
         <!--巡查员弹框-->
         <!---->
         <!--<el-dialog-->
@@ -134,7 +134,7 @@
 		        }
 		    },
         },
-        components: {MainMap, LayerSwitch,publicInfo}
+        components: {MainMap, LayerSwitch,publicInfo,indexpanel}
     }
 </script>
 
