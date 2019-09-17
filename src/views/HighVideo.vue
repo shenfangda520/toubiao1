@@ -20,6 +20,12 @@
                     <iframe id="i_real" style="height:100%;width:100%;border:none;"
                             src="/static/video/realtimeplay.html"></iframe>
                 </div>
+                <div class="v-right">
+                    <el-table :data="tableData" border>
+                        <el-table-column prop="sbname" label="摄像头名称"></el-table-column>
+                        <el-table-column prop="sbzhuantai" label="设备开关状态"></el-table-column>
+                    </el-table>
+                </div>
             </div>
             <!--视频底部-->
         </div>
@@ -148,6 +154,15 @@
         name: 'heighvideos',
         data() {
             return {
+                tableData:[
+                    {sbname:'摄像头1',sbzhuantai:'开'},
+                    {sbname:'摄像头2',sbzhuantai:'关'},
+                    {sbname:'摄像头3',sbzhuantai:'开'},
+                    {sbname:'摄像头4',sbzhuantai:'开'},
+                    {sbname:'摄像头5',sbzhuantai:'开'},
+                    {sbname:'摄像头6',sbzhuantai:'开'},
+                    {sbname:'摄像头7',sbzhuantai:'开'}
+                ],
                 //行业类别
                 IndustryCategory: '----',
                 //产品
@@ -507,9 +522,16 @@
                 }
             }
             .v-video2 {
-                width: calc(100% - 4px);
+                width: calc(80% - 4px);
                 height: 100%;
-                margin: 0px auto;
+                float: left;
+
+            }
+            .v-right{
+                width: 20%;
+                height: 100%;
+                float: left;
+                background: #c8c9cc;
             }
         }
         //新单元
