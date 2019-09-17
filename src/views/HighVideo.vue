@@ -7,8 +7,8 @@
             <!--视频上部控件-->
             <div class="tv-kongjian">
                 <span></span>
-                <i title="关闭窗口" style="color: #666;margin-top: 15px;float: right;margin-right: 20px"
-                   class="el-icon-close" @click="btnClose"></i>
+                <router-link to="/"><i title="关闭窗口" style="color: #666;margin-top: 15px;float: right;margin-right: 20px"
+                                       class="el-icon-close" @click="btnClose"></i></router-link>
             </div>
             <!--视频-->
             <div class="shiping">
@@ -25,28 +25,28 @@
         </div>
         <div class="video-bottom">
             <!--左边-->
-            <div class="v-left">
-                <div class="v-l-title">实时视频监控列表</div>
-                <div class="v-l-conter">
-                    <!--搜索过滤-->
-                    <el-input
-                            placeholder="输入关键字进行过滤"
-                            icon="search"
-                            v-model="filterText">
-                    </el-input>
-                    <!--树形图-->
-                    <el-tree
-                            class="filter-tree"
-                            :data="TreeFigureData"
-                            :props="defaultProps"
-                            accordion
-                            @node-click="handleNodeBlickClick"
-                            :filter-node-method="filterNode"
-                            ref="tree2">
-                    </el-tree>
-                </div>
+            <!--<div class="v-left">-->
+                <!--<div class="v-l-title">实时视频监控列表</div>-->
+                <!--<div class="v-l-conter">-->
+                    <!--&lt;!&ndash;搜索过滤&ndash;&gt;-->
+                    <!--<el-input-->
+                            <!--placeholder="输入关键字进行过滤"-->
+                            <!--icon="search"-->
+                            <!--v-model="filterText">-->
+                    <!--</el-input>-->
+                    <!--&lt;!&ndash;树形图&ndash;&gt;-->
+                    <!--<el-tree-->
+                            <!--class="filter-tree"-->
+                            <!--:data="TreeFigureData"-->
+                            <!--:props="defaultProps"-->
+                            <!--accordion-->
+                            <!--@node-click="handleNodeBlickClick"-->
+                            <!--:filter-node-method="filterNode"-->
+                            <!--ref="tree2">-->
+                    <!--</el-tree>-->
+                <!--</div>-->
 
-            </div>
+            <!--</div>-->
             <!--中间-->
             <div class="v-conent">
                 <div class="vi-itemobj">
@@ -57,87 +57,87 @@
                 </div>
             </div>
             <!--右边-->
-            <div class="v-right">
-                <!---->
-                <div class="v-l-title">基本信息</div>
-                <!---->
-                <div class="table-from">
-                    <table border="1" style="width: 100%">
-                        <tr>
-                            <td width="80" style="background: #ebebeb">
-                                <div class="t-item">企业名称</div>
-                            </td>
-                            <td>
-                                <div class="t-item2">{{casName}}</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="background: #ebebeb">
-                                <div class="t-item">行业类别</div>
-                            </td>
-                            <td>
-                                <div class="t-item2">{{IndustryCategory}}</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="background: #ebebeb">
-                                <div class="t-item">产品</div>
-                            </td>
-                            <td>
-                                <div class="t-item2">{{product}}</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="background: #ebebeb">
-                                <div class="t-item">所属区县</div>
-                            </td>
-                            <td>
-                                <div class="t-item2">{{DistrictCounty}}</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="background: #ebebeb">
-                                <div class="t-item">企业地址</div>
-                            </td>
-                            <td>
-                                <div class="t-item2">{{EnterpriseAddress}}</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="background: #ebebeb">
-                                <div class="t-item">所属网格</div>
-                            </td>
-                            <td>
-                                <div class="t-item2">{{Grid}}</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="background: #ebebeb">
-                                <div class="t-item">网格员</div>
-                            </td>
-                            <td>
-                                <div class="t-item2">{{Gridman}}</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="background: #ebebeb">
-                                <div class="t-item">网格员联系方式</div>
-                            </td>
-                            <td>
-                                <div class="t-item2">{{GridmanPhone}}</div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="background: #ebebeb">
-                                <div class="t-item">监控类型</div>
-                            </td>
-                            <td>
-                                <div class="t-item2">{{MonitoringType}}</div>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+            <!--<div class="v-right">-->
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                <!--<div class="v-l-title">基本信息</div>-->
+                <!--&lt;!&ndash;&ndash;&gt;-->
+                <!--<div class="table-from">-->
+                    <!--<table border="1" style="width: 100%">-->
+                        <!--<tr>-->
+                            <!--<td width="80" style="background: #ebebeb">-->
+                                <!--<div class="t-item">企业名称</div>-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<div class="t-item2">{{casName}}</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td style="background: #ebebeb">-->
+                                <!--<div class="t-item">行业类别</div>-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<div class="t-item2">{{IndustryCategory}}</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td style="background: #ebebeb">-->
+                                <!--<div class="t-item">产品</div>-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<div class="t-item2">{{product}}</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td style="background: #ebebeb">-->
+                                <!--<div class="t-item">所属区县</div>-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<div class="t-item2">{{DistrictCounty}}</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td style="background: #ebebeb">-->
+                                <!--<div class="t-item">企业地址</div>-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<div class="t-item2">{{EnterpriseAddress}}</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td style="background: #ebebeb">-->
+                                <!--<div class="t-item">所属网格</div>-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<div class="t-item2">{{Grid}}</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td style="background: #ebebeb">-->
+                                <!--<div class="t-item">网格员</div>-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<div class="t-item2">{{Gridman}}</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td style="background: #ebebeb">-->
+                                <!--<div class="t-item">网格员联系方式</div>-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<div class="t-item2">{{GridmanPhone}}</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                        <!--<tr>-->
+                            <!--<td style="background: #ebebeb">-->
+                                <!--<div class="t-item">监控类型</div>-->
+                            <!--</td>-->
+                            <!--<td>-->
+                                <!--<div class="t-item2">{{MonitoringType}}</div>-->
+                            <!--</td>-->
+                        <!--</tr>-->
+                    <!--</table>-->
+                <!--</div>-->
+            <!--</div>-->
         </div>
     </div>
 </template>
@@ -167,7 +167,7 @@
                 //
                 spbjImg: 'static/imgs/gdvideo/gkbj.png',
                 //
-                gktitle: '高空五公里监控',
+                gktitle: '视频监控',
                 //
                 casName: '企业监控点',
                 //
@@ -403,7 +403,7 @@
                 switch (data.label) {
                     case '高空五公里监控':
                         this.spbjImg = 'static/imgs/gdvideo/gkbj.png';
-                        this.gktitle = '高空五公里监控';
+                        this.gktitle = '视频监控';
                         break;
                     case 'VOCs视频监控':
                         this.spbjImg = 'static/imgs/gdvideo/vocbj.png';
@@ -415,7 +415,7 @@
                         break;
                     default:
                         this.spbjImg = 'static/imgs/gdvideo/gkbj.png';
-                        this.gktitle = '高空五公里监控';
+                        this.gktitle = '视频监控';
                 }
                 //视频名称
                 this.casName_xt = this.casName +'==>'+ this.Cname;
@@ -507,7 +507,7 @@
                 }
             }
             .v-video2 {
-                width: calc(60% - 4px);
+                width: calc(100% - 4px);
                 height: 100%;
                 margin: 0px auto;
             }
@@ -542,7 +542,7 @@
             }
             .v-conent {
                 float: left;
-                width: 60%;
+                width: 100%;
                 height: 100%;
                 background: #f5f5f5;
                 .vi-itemobj {
