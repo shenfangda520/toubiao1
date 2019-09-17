@@ -218,7 +218,7 @@
           },{
             name: 'layer_cgq_voc',
             parentName: 'layer_jc',
-            value: 'VOCs监测',
+            value: 'TVOC在线监测',
             src: 'static/imgs/mues/sixzb/vocw.png',
             checkedSrc: 'static/imgs/mues/sixzb/vocw_c.png',
             checked:false,
@@ -239,7 +239,7 @@
         ZHtargets: [
           {
             name: 'layer_qm',
-            value: '分表计电系统',
+            value: '分表记电系统',
             parentName: 'layer_zh',
             parentIndex: '2',
             src: 'static/imgs/main/anjian.png',
@@ -250,7 +250,7 @@
         JKtargets: [
           {
             name: 'layer_sp_slw',
-            value: 'TVOC视频监控',
+            value: 'VOC视频监控',
             parentName: 'layer_jk',
             from:'0',
             parentIndex: '1',

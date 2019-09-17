@@ -1245,7 +1245,7 @@
           }
 
           (this.searchInfoWindow = new BMapLib.SearchInfoWindow(t.map, res || '无数据', {
-            title:infowindowTitle?infowindowTitle: '<sapn style="font-size:16px" ><b title="' + (attributes[displayName] || '') + '">' + (attributes[displayName] || '') + '</b>' + '</span><span id="vocvideo" class="class-vidoes"  style="display:' + ((ptType.toUpperCase() === 'LAYER_CGQ_VOC') ? 'block' : 'none') + '">视频点击播放</span>',             //标题
+            title:infowindowTitle?infowindowTitle: '<sapn style="font-size:16px" ><b title="' + (attributes[displayName] || '') + '">' + (attributes[displayName] || '') + '</b>' + '</span><span id="vocvideo" class="class-vidoes"  style="display:' + ((ptType.toUpperCase() === 'LAYER_CGQ_VOC') ? 'none' : 'none') + '">视频点击播放</span>',             //标题0916
             width: infoWidth,
             height: "auto",
             enableAutoPan: true,
@@ -1536,7 +1536,8 @@ width:100%;
         if (!data.videoCamIndexCode) {
           // console.log(data.videoCamIndexCode)
           // console.log('这里走过来了')
-          $('#vocvideo').css('background', '#ccc');
+          // $('#vocvideo').css('background', '#ccc');
+          $('#vocvideo').css('display', 'none');
         }
         let gridName = (data.firstGridName || '') + '-' + (data.secodGridName || '') + '-' + (data.threeGridName || '');
         let tel = data.Contact || data.contact || '';
