@@ -22,12 +22,13 @@
         <span>{{item.value}}</span>
       </li>
     </ol>
+	<!--
     <ol class="jkworp" v-show="jiankong" :style="'top:'+(shiping ? (kongqi ? 38*(mlength+3)+6 : 38*4+6) : (kongqi ? 38*(mlength+2)+6 : 38*3+6))+'px'">
       <li style="width: 136px;" v-for="(item,index) in ZHtargets" :data-parent-index="item.parentIndex" :data-parent="item.parentName" :data-index="index" :data-type="item.name" @click="OKQClick">
         <img :src="item.src" title=""/>
         <span>{{item.value}}</span>
       </li>
-    </ol>
+    </ol>-->
 
     <main-handle></main-handle>
   </div>
@@ -62,14 +63,14 @@
             src: 'static/imgs/main/left.png',
             checkedSrc: 'static/imgs/main/right.png',
             checked:false
-          },
-          {
-            name: 'layer_zh',
-            value: '指挥调度',
-            src: 'static/imgs/main/left.png',
-            checkedSrc: 'static/imgs/main/right.png',
-            checked:false
           }
+          //{
+          //  name: 'layer_zh',
+          //  value: '指挥调度',
+          //  src: 'static/imgs/main/left.png',
+          //  checkedSrc: 'static/imgs/main/right.png',
+          //  checked:false
+          //}
 
         ],
         //实时监测
