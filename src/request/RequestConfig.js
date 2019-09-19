@@ -87,7 +87,7 @@ export default {
         break;
       case 'VIDEOTAEGET':
         cf = apiConfig[0];
-        url = cf.site + cf.port + cf.path + 'api/Video/GetVideoDeviceInfo';
+        url = '../../static/data/videos.json';//cf.site + cf.port + cf.path + 'api/Video/GetVideoDeviceInfo';
         break;
       case 'XHDUST':
         cf = apiConfig[0];

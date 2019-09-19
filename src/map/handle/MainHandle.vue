@@ -381,7 +381,8 @@
           case 'LAYER_SP_GKW':
             //pmsKey = uppercaseType === 'LAYER_SP' ? undefined : (uppercaseType === 'LAYER_SP_SLW' ? '' : (uppercaseType === 'LAYER_SP_VOC' ? '' : (uppercaseType === 'LAYER_SP_GKW' ? '' : undefined)));
             let urlSP = RequestHandle.getRequestUrl('VIDEOTAEGET');
-            displayName = 'CamName';
+            // displayName = 'CamName';
+            displayName = 'name';
             //pmsKey && (pms = {key: pmsKey});
             lsUrl.push(urlSP);
             break;
@@ -496,9 +497,9 @@
               if (dt) {
                 for (let k = 0, length = dt.length; k < length; k++) {
                   let item = dt[k];
-                  if (item.Type == from) {
+                  // if (item.Type == from) {
                     rtValue.push(dt[k]);
-                  }
+                  // }
                 }
               }
               rtValue.length && (t.loadMarker(rtValue, type, fieldName, displayName), t.setDataSource(type, rtValue, fieldName, displayName));
