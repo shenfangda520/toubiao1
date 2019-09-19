@@ -2,44 +2,44 @@
   "Status": 1,
   "data":[
     {
-      "name": "阿克苏诺贝尔装饰涂料（廊坊）有限公司",
-      "add": "丁香道68号",
-      "Contact": "鄂大伟",
-      "Phone": "18931658510",
-      "openstatus": "开",
-      "longitude": 116.77569233,
-      "latitude": 39.54419591,
-      "id": 1
-    },
-    {
-      "name": "北京吉信气弹簧有限公司廊坊分公司",
-      "add": "金运路9号",
-      "Contact": "李经理",
-      "Phone": "13633065439",
-      "openstatus": "开",
-      "longitude": 116.75952001,
-      "latitude": 39.58174807,
-      "id": 2
-    },
-    {
-      "name": "多元产业基地库房",
-      "add": "丁香道68号",
-      "Contact": "负责人",
-      "Phone": "18531669955",
-      "openstatus": "开",
-      "longitude": 116.77501889,
-      "latitude": 39.56039153,
-      "id": 3
-    },
-    {
-      "name": "共和兴塑胶（廊坊）有限公司",
-      "add": "北凤道",
-      "Contact": "张工",
-      "Phone": "13784124896",
-      "openstatus": "开",
-      "longitude": 116.78252604,
-      "latitude": 39.56773138,
-      "id": 4
-    }
+		"name": "廊坊中本包装有限公司",
+		"add": "汇源道6号",
+		"Contact": "杨",
+		"Phone": "13582645812",
+		"openstatus": "开",
+		"longitude": 116.78735132,
+		"latitude": 39.57401656,
+		"id": 1
+	  },
+	  {
+		"name": "加德士（廊坊）塑料有限公司",
+		"add": "耀华道11号",
+		"Contact": "周士国",
+		"Phone": "15003165350",
+		"openstatus": "开",
+		"longitude": 116.77815889,
+		"latitude": 39.56044153,
+		"id": 2
+	  },
+	  {
+		"name": "廊坊立邦涂料有限公司",
+		"add": "富中路48号",
+		"Contact": "田海龙",
+		"Phone": "13633166234",
+		"openstatus": "开",
+		"longitude": 116.76663001,
+		"latitude": 39.57799807,
+		"id": 3
+	  },
+	  {
+		"name": "廊坊爱普包装有限公司",
+		"add": "岳洋路6号",
+		"Contact": "薛",
+		"Phone": "13633266533",
+		"openstatus": "开",
+		"longitude": 116.79316669,
+		"latitude": 39.57372562,
+		"id": 4
+	  }
   ]
 }

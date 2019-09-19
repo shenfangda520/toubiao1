@@ -1988,7 +1988,7 @@ width:100%;
           console.log(data)
         // return '<iframe id="v-frame" style="height:100%;width:100%;border:none;" src="/static/video/video.html?camIndexCode=' + data['CamIndexCode'] + '&devIndexCode=' + data['DevIndexCode'] + '&area=' + data['Area'] + '&type=' + data['Type'] + '&name=' + data['CamName'] + '&panyname=' + data['CompanyName'] + '"></iframe>';
         return `<div style="height:100%;width:100%;">
-             <video style="width: 100%;height: calc(100% - 100px)" src="../../static/videos/${data.id}.mp4" muted autoplay loop controls>
+             <video style="width: 100%;height: calc(100% - 100px)" src="../../static/videos/${data.id}.mp4" muted autoplay loop>
                         您的浏览器不支持视频播放；请升级浏览器
                     </video>
              <div class="vdimages">
